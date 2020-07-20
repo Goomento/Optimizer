@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author @haihv433
+ * @copyright Copyright (c) 2020 Goomento (https://store.goomento.com)
+ * @package Goomento_Optimizer
+ * @link https://github.com/Goomento/Optimizer
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Goomento_Optimizer::maintext"
+             title="Optimizer"
+             module="Goomento_Optimizer"
+             sortOrder="8"
+             parent="Goomento_Base::menu"
+             resource="Goomento_Optimizer::maintext"/>
+
+        <add id="Goomento_Optimizer::config"
+             title="Configuration"
+             module="Goomento_Optimizer"
+             sortOrder="1"
+             parent="Goomento_Optimizer::maintext"
+             action="adminhtml/system_config/edit/section/goomento_optimizer"
+             resource="Goomento_Optimizer::config"
+             />
+    </menu>
+</config>

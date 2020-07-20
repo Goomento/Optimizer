@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author @haihv433
+ * @copyright Copyright (c) 2020 Goomento (https://store.goomento.com)
+ * @package Goomento_Optimizer
+ * @link https://github.com/Goomento/Optimizer
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Controller\ResultInterface">
+        <plugin name="ProcessPageResult" type="Goomento\Optimizer\Plugin\Framework\Controller\ProcessPageResult" sortOrder="999" />
+    </type>
+    <type name="Goomento\Optimizer\Model\ProcessorComposite">
+        <arguments>
+            <argument name="processors" xsi:type="array">
+                <item name="lazy_load" xsi:type="string">Goomento\Optimizer\Model\Processor\LazyLoad</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author @haihv433
+ * @copyright Copyright (c) 2020 Goomento (https://store.goomento.com)
+ * @package Goomento_Optimizer
+ * @link https://github.com/Goomento/Optimizer
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <goomento_optimizer>
+            <general>
+                <active>0</active>
+            </general>
+            <lazy_load>
+                <active>0</active>
+                <ignore_urls>logo.svg</ignore_urls>
+            </lazy_load>
+        </goomento_optimizer>
+    </default>
+</config>
